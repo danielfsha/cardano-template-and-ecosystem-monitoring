@@ -1,0 +1,20 @@
+{
+  "tasks": {
+    "dev": "deno run --watch crowdfund.ts",
+    "prepare": "deno run -A crowdfund.ts prepare 5",
+    "balances": "deno run -A crowdfund.ts balances",
+    "list-utxos": "deno run -A crowdfund.ts list-utxos",
+    "show-addresses": "deno run -A crowdfund.ts show-addresses",
+    "start": "deno run -A crowdfund.ts start 10000000 600 0",
+    "donate": "echo 'Run: deno run -A crowdfund.ts donate <tx_hash> 2000000 1'",
+    "withdraw": "echo 'Run: deno run -A crowdfund.ts withdraw <tx_hash> 0'",
+    "reclaim": "echo 'Run: deno run -A crowdfund.ts reclaim <tx_hash> 1'",
+    "transfer": "echo 'Run: deno run -A crowdfund.ts transfer <from> <to> <amount>'"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@meshsdk/core": "npm:@meshsdk/core@1.8.14",
+    "@meshsdk/core-cst": "npm:@meshsdk/core-cst@1.9.0-beta.20",
+    "@meshsdk/common": "npm:@meshsdk/common@1.9.0-beta.20"
+  }
+}
