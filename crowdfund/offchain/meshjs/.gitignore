@@ -1,6 +1,7 @@
 # Ignore wallet seed files and other secrets
 wallet_*.txt
 htlc_store.json
+store.json
 .env
 .env.local
 
